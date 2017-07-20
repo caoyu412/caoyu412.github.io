@@ -1,22 +1,29 @@
 <template>
-  <el-menu theme="blue" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-    <el-menu-item index="1" :to="{ path: '/' }">首页</el-menu-item>
-    <el-submenu index="2">
-      <template slot="title">基础demo</template>
-      <el-menu-item index="2-1">选项1</el-menu-item>
-      <el-menu-item index="2-2">选项2</el-menu-item>
-      <el-menu-item index="2-3">选项3</el-menu-item>
-    </el-submenu>
-    <el-menu-item index="3">推荐文章</el-menu-item>
-  </el-menu>
+  <div class="wrap">
+    <a class="option" v-for="(item, index) in data" :href="item.link">
+      {{ item.name }}
+    </a>
+  </div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      activeIndex: '1',
-      activeIndex2: '1',
+      data: [
+        {
+          name: '首页',
+          link: '/',
+        },
+        {
+          name: 'demo展示',
+          link: '/case',
+        },
+        {
+          name: '好文推荐',
+          link: '/article',
+        },
+      ],
     };
   },
   methods: {
@@ -27,3 +34,35 @@ export default {
 };
 </script>
 
+<style scoped>
+  .wrap {
+    width: 100%;
+    height: 52px;
+    background: url("../assets/nav-bg.png") repeat-x;
+  }
+  
+  .content {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .option {
+    float: left;
+    width: 140px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    cursor: pointer;
+    
+    /*&:hover {*/
+      /*background: url("../assets/nav-bg-hover.png") repeat-x;*/
+     /*}*/
+  }
+  
+  .option:hover {
+    width: 140px;
+    height: 52px;
+    background: url("../assets/nav-bg-hover.png") repeat-x center;
+  }
+
+</style>

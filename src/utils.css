@@ -1,0 +1,29 @@
+input, select {
+  vertical-align:middle;
+}
+
+a {
+  text-decoration:none;
+  color: #3c3c3c;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style:none;
+}
+
+.clearfix::after {
+  content: '.';
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}

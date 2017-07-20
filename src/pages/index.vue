@@ -1,13 +1,17 @@
 <template>
   <div>
-    <el-row>
-      <el-col :span="3"><div class="grid-content"></div></el-col>
-      <el-col :span="18">
-        <nav-menu></nav-menu>
-        我是首页
-      </el-col>
-      <el-col :span="3"><div class="grid-content"></div></el-col>
-    </el-row>
+    <div>
+      <el-row>
+        <el-col :span="3"><div class="grid-content"></div></el-col>
+        <el-col :span="18">
+          <nav-menu></nav-menu>
+          <div class="content">
+            首页
+          </div>
+        </el-col>
+        <el-col :span="3"><div class="grid-content"></div></el-col>
+      </el-row>
+    </div>
   </div>
 </template>
 
@@ -26,7 +30,9 @@ export default {
 };
 </script>
 
-<style>
-
-
+<style scoped>
+  .content {
+    width: 100%;
+    height: auto;
+  }
 </style>
