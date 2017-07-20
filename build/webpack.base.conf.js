@@ -36,6 +36,24 @@ module.exports = {
           formatter: require('eslint-friendly-formatter')
         }
       },
+      // {
+      //   test: /\.(css|vue)$/,
+      //   exclude: /node_modules/,
+      //   use: [
+      //     {
+      //       loader: 'style-loader'
+      //     },
+      //     {
+      //       loader: 'css-loader',
+      //       options: {
+      //         importLoaders: 1,
+      //       }
+      //     },
+      //     {
+      //       loader: 'postcss-loader'
+      //     }
+      //   ]
+      // },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
