@@ -1,18 +1,14 @@
 <template>
-  <div>
-    <div>
       <el-row>
+        <nav-menu></nav-menu>
         <el-col :span="3"><div class="grid-content"></div></el-col>
         <el-col :span="18">
-          <nav-menu></nav-menu>
           <div class="content">
             首页
           </div>
         </el-col>
         <el-col :span="3"><div class="grid-content"></div></el-col>
       </el-row>
-    </div>
-  </div>
 </template>
 
 <script>

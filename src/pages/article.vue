@@ -1,10 +1,8 @@
 <template>
-  <div>
-    <div>
       <el-row>
+        <nav-menu></nav-menu>
         <el-col :span="3"><div class="grid-content"></div></el-col>
         <el-col :span="18">
-          <nav-menu></nav-menu>
           <div class="content">
             <div class="main">
               <a class="link-article" href="https://github.com/sivan/javascript-style-guide/blob/master/es5/README.md" target="_blank">Airbnb代码规范</a>
@@ -22,8 +20,6 @@
         </el-col>
         <el-col :span="3"><div class="grid-content"></div></el-col>
       </el-row>
-    </div>
-  </div>
 </template>
 
 <script>
@@ -51,13 +47,12 @@ export default {
   .main {
     width: 400px;
     height: 400px;
-    background-color: antiquewhite;
     padding-top: 6%;
     margin-left: 6%;
   }
   
   .link-article {
     display: block;
-    padding-top: 15px;
+    padding-top: 20px;
   }
 </style>
