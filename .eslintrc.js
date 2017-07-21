@@ -39,6 +39,8 @@ module.exports = {
     'vars-on-top': ['off'],
     'prefer-template': ['off'],
     'prefer-arrow-callback': ['off'],
+    'no-else-return': ['off'],
+    'global-require': ['off'],// 后期调整
 
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
