@@ -33,6 +33,10 @@ export default {
           link: '/stars',
         },
         {
+          name: '告白',
+          link: '/love',
+        },
+        {
           name: '好文推荐',
           link: '/article',
         },

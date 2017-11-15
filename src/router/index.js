@@ -4,6 +4,7 @@ import Index from '../pages/index'
 import ArticlePackage from '../pages/article'
 import CasePackage from '../pages/case'
 import StarsPackage from '../pages/stars'
+import LovePackage from '../pages/love'
 
 Vue.use(Router)
 
@@ -25,6 +26,11 @@ export default new Router({
       path: '/stars',
       name: 'stars',
       component: StarsPackage,
+    },
+    {
+      path: '/love',
+      name: 'love',
+      component: LovePackage,
     },
     {
       path: '/article',
