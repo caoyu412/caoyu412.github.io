@@ -41,16 +41,16 @@ export default {
   .content {
     width: 100%;
     height: 1500px;
-    background: url("http://img.zcool.cn/community/0145f058f42b01a8012049ef61c517.jpg") center no-repeat;
+    background: url("../assets/img/0145f058f42b01a8012049ef61c517.jpg") center no-repeat;
   }
-  
+
   .main {
     width: 400px;
     height: 400px;
     padding-top: 6%;
     margin-left: 6%;
   }
-  
+
   .link-article {
     display: block;
     padding-top: 20px;
