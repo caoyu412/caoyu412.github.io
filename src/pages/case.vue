@@ -4,10 +4,8 @@
         <el-col :span="3"><div class="grid-content"></div></el-col>
         <el-col :span="18">
           <div class="content">
-            我是案例页
-            
               <slide-show :slides="slides" :inv="slideSpeed" @onchange="dosomethingOnSlide"></slide-show>
-            
+
           </div>
         </el-col>
         <el-col :span="3"><div class="grid-content"></div></el-col>
@@ -15,14 +13,10 @@
 </template>
 
 <script>
-import NavMenu from '../components/Navmenu';
-import SlideShow from '../components/SlideShow';
+import NavMenu from '../components/Navmenu'
+import SlideShow from '../components/SlideShow'
 
 export default {
-  components: {
-    NavMenu,
-    SlideShow,
-  },
   data() {
     return {
       msg: '我是案例页',
@@ -51,9 +45,14 @@ export default {
       ],
     };
   },
-  metch: {
+  methods: {
     dosomethingOnSlide() {
+      console.log(1)
     },
+  },
+  components: {
+    NavMenu,
+    SlideShow,
   },
 };
 </script>

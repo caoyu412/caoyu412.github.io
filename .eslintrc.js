@@ -41,7 +41,16 @@ module.exports = {
     'prefer-arrow-callback': ['off'],
     'no-else-return': ['off'],
     'global-require': ['off'],// 后期调整
-
+    'linebreak-style': ['off'],
+    "semi": [0, "always"],
+    "comma-dangle": [0],
+    "no-plusplus": ['off'],
+    "no-mixed-operators": 0,
+    "no-new": 0,
+    "no-param-reassign": 0,
+    "no-return-assign": 0,
+    "func-names": 0,
+    "no-underscore-dangle": 0,
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
   }

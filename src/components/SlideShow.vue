@@ -75,7 +75,6 @@ export default {
     },
   },
   mounted() {
-    console.log(this.slides);
     this.runInterval();
   },
 };
@@ -137,7 +136,7 @@ export default {
   .slide-pages li .on {
     text-decoration: underline;
   }
-  
+
   .choose-num {
     color: #fff;
   }

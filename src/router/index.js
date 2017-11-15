@@ -1,10 +1,11 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import Index from '../pages/index';
-import ArticlePackage from '../pages/article';
-import CasePackage from '../pages/case';
+import Vue from 'vue'
+import Router from 'vue-router'
+import Index from '../pages/index'
+import ArticlePackage from '../pages/article'
+import CasePackage from '../pages/case'
+import StarsPackage from '../pages/stars'
 
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
   history: true,
@@ -21,6 +22,11 @@ export default new Router({
       component: CasePackage,
     },
     {
+      path: '/stars',
+      name: 'stars',
+      component: StarsPackage,
+    },
+    {
       path: '/article',
       name: 'article',
       component: ArticlePackage,
@@ -28,6 +34,6 @@ export default new Router({
     {
       path: '*',
       redirect: '/',
-    },
-  ],
-});
+    }
+  ]
+})

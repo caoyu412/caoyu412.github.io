@@ -12,9 +12,7 @@
       <el-col :span="3"><div class="grid-content"></div></el-col>
     </div>
   </el-row>
-  
-  
-  
+
 </template>
 
 <script>
@@ -29,6 +27,10 @@ export default {
         {
           name: 'demo展示',
           link: '/case',
+        },
+        {
+          name: '银河',
+          link: '/stars',
         },
         {
           name: '好文推荐',
@@ -54,17 +56,17 @@ export default {
     height: 52px;
     background-color: #585369;
   }
-  
+
   .wrap-main {
     width: 100%;
     height: 52px;
   }
-  
+
   .content {
     width: 100%;
     height: 100%;
   }
-  
+
   .option {
     float: left;
     width: 140px;
@@ -78,7 +80,7 @@ export default {
       /*background: url("../assets/nav-bg-hover.png") repeat-x;*/
      /*}*/
   }
-  
+
   .option:hover {
     width: 140px;
     height: 52px;
