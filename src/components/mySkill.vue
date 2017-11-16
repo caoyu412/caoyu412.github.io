@@ -62,7 +62,7 @@ export default {
     border: 1px solid #fff;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.15;
+    line-height: 1.8;
     border-radius: 10px;
     color: #585369;
   }
