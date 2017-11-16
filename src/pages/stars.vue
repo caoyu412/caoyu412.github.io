@@ -1,6 +1,5 @@
 <template>
   <div class="content">
-    <nav-menu></nav-menu>
     <div class="htmleaf-container">
       <canvas id="canvas"></canvas>
     </div>
@@ -8,7 +7,6 @@
 </template>
 
 <script>
-import NavMenu from '../components/Navmenu'
 
 export default {
   data() {
@@ -108,7 +106,6 @@ export default {
     },
   },
   components: {
-    NavMenu,
   },
   mounted() {
     this.init()

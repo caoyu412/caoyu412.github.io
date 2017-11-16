@@ -1,6 +1,5 @@
 <template>
       <el-row>
-        <nav-menu></nav-menu>
         <el-col :span="3"><div class="grid-content"></div></el-col>
         <el-col :span="18">
           <div class="content">
@@ -28,11 +27,8 @@
 </template>
 
 <script>
-import NavMenu from '../components/Navmenu';
-
 export default {
   components: {
-    NavMenu,
   },
   data() {
     return {
@@ -48,17 +44,17 @@ export default {
     width: 100%;
     height: 934px;
   }
-  
+
   .title {
     margin-top: 30px;
     margin-bottom: 30px;
   }
-  
+
   .line-txt {
     text-align: left;
     padding-left: 12%;
   }
-  
+
   .main {
     position: absolute;
     top: 50%;
@@ -71,11 +67,11 @@ export default {
     /* transition: width 3s, height 3s, transform 3s; */
     animation: information 2s linear 1s;
     border: 1px solid #fff;
-    
+
     border-radius: 10px;
     color: #585369;
   }
-  
+
   @keyframes information {
     0% {
       width: 700px;
@@ -85,7 +81,7 @@ export default {
       transform: rotate(0);
       font-size: 16px;
     }
-    
+
     50% {
       width: 440px;
       height: 440px;
@@ -94,7 +90,7 @@ export default {
       transform: rotate(180deg);
       font-size: 10px;
     }
-    
+
     100% {
       width: 700px;
       height: 700px;

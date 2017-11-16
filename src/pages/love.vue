@@ -1,8 +1,6 @@
 <script src="../../../酷炫/jiaoben2329/js/imageTransform3D.js"></script>
 <template>
   <div class="content">
-    <nav-menu></nav-menu>
-
     <div class="love"><span class="letter">I</span><span class="letter"></span><span class="letter">L</span><span class="letter">o</span><span class="letter">v</span><span class="letter">e</span><span class="letter"></span><span class="letter">Y</span><span class="letter">o</span><span class="letter">u</span><span class="letter"></span><span class="letter">G</span><span class="letter">r</span><span class="letter">a</span><span class="letter">c</span><span class="letter">e</span><span class="letter">!</span>
     </div>
     <div class="roses">
@@ -176,17 +174,16 @@
 </template>
 
 <script>
-import NavMenu from '../components/Navmenu'
 
 export default {
   data() {
-    return {}
+    return {
+    }
   },
   methods: {
 
   },
   components: {
-    NavMenu,
   },
 };
 </script>

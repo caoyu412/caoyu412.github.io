@@ -1,6 +1,5 @@
 <template>
       <el-row>
-        <nav-menu></nav-menu>
         <el-col :span="3"><div class="grid-content"></div></el-col>
         <el-col :span="18">
           <div class="content">
@@ -23,11 +22,9 @@
 </template>
 
 <script>
-import NavMenu from '../components/Navmenu';
 
 export default {
   components: {
-    NavMenu,
   },
   data() {
     return {

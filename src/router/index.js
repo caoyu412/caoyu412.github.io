@@ -13,33 +13,33 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
+      path: '/index/:navIndex',
       name: 'index',
       component: Index,
     },
     {
-      path: '/case',
+      path: '/case/:navIndex',
       name: 'case',
       component: CasePackage,
     },
     {
-      path: '/stars',
+      path: '/stars/:navIndex',
       name: 'stars',
       component: StarsPackage,
     },
     {
-      path: '/love',
+      path: '/love/:navIndex',
       name: 'love',
       component: LovePackage,
     },
     {
-      path: '/article',
+      path: '/article/:navIndex',
       name: 'article',
       component: ArticlePackage,
     },
     {
       path: '*',
-      redirect: '/',
+      redirect: '/index/0',
     }
   ]
 })

@@ -1,16 +1,19 @@
 <template>
   <div id="app">
+    <nav-menu></nav-menu>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Index from './pages/index';
+import Index from './pages/index'
+import NavMenu from './components/Navmenu'
 
 export default {
   name: 'app',
   components: {
     Index,
+    NavMenu,
   },
 };
 </script>
