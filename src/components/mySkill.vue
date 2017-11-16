@@ -60,7 +60,8 @@ export default {
     /* transition: width 3s, height 3s, transform 3s; */
     animation: information 2s linear 1s;
     border: 1px solid #fff;
-
+    font-size: 16px;
+    line-height: 1.15;
     border-radius: 10px;
     color: #585369;
   }
