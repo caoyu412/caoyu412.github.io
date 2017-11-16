@@ -5,6 +5,7 @@ import ArticlePackage from '../pages/article'
 import CasePackage from '../pages/case'
 import StarsPackage from '../pages/stars'
 import LovePackage from '../pages/love'
+import PicturePackage from '../pages/picture'
 
 Vue.use(Router)
 
@@ -31,6 +32,11 @@ export default new Router({
       path: '/love/:navIndex',
       name: 'love',
       component: LovePackage,
+    },
+    {
+      path: '/picture/:navIndex',
+      name: 'picture',
+      component: PicturePackage,
     },
     {
       path: '/article/:navIndex',

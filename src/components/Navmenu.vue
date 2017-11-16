@@ -42,9 +42,14 @@ export default {
           index: '3',
         },
         {
-          name: '好文推荐',
-          link: '/article/4',
+          name: '相册',
+          link: '/picture/4',
           index: '4',
+        },
+        {
+          name: '好文推荐',
+          link: '/article/5',
+          index: '5',
         },
       ],
     };
@@ -55,7 +60,7 @@ export default {
       this.Index = this.$route.params.navIndex
     },
     handleSelect(index) {
-      this.$route.params.navIndex = index
+      this.Index = index
     },
   },
   mounted() {
