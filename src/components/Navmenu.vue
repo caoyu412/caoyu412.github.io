@@ -22,41 +22,35 @@ export default {
       Index: '',
       data: [
         {
-          name: '首页',
-          link: '/index/0',
+          name: 'demo展示',
+          link: '/case/0',
           index: '0',
         },
         {
-          name: 'demo展示',
-          link: '/case/1',
+          name: '银河',
+          link: '/stars/1',
           index: '1',
         },
         {
-          name: '银河',
-          link: '/stars/2',
+          name: '告白',
+          link: '/love/2',
           index: '2',
         },
         {
-          name: '告白',
-          link: '/love/3',
+          name: '相册',
+          link: '/picture/3',
           index: '3',
         },
         {
-          name: '相册',
-          link: '/picture/4',
+          name: '个人中心',
+          link: '/personal/4',
           index: '4',
-        },
-        {
-          name: '好文推荐',
-          link: '/article/5',
-          index: '5',
         },
       ],
     };
   },
   methods: {
     init() {
-//      this.Index = window.localStorage.navIndex
       this.Index = this.$route.params.navIndex
     },
     handleSelect(index) {
@@ -82,6 +76,7 @@ export default {
   .wrap-main {
     width: 100%;
     height: 52px;
+    font-size: 16px!important;
   }
 
   .content {
@@ -91,23 +86,23 @@ export default {
 
   .option {
     float: left;
-    width: 140px;
+    width: 138px;
     height: 52px;
     line-height: 52px;
     text-align: center;
     cursor: pointer;
     color: #fff;
+    border-radius: 8px;
+    margin: 0 1px;
 
     /*&:hover {*/
       /*background: url("../assets/nav-bg-hover.png") repeat-x;*/
      /*}*/
   }
 
-/*  .option:hover {
-    width: 140px;
-    height: 52px;
+  .option:hover {
     background-color: #A3226A;
-  }*/
+  }
   .active {
     background-color: #A3226A;
   }

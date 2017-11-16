@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Index from './pages/index'
+import Index from './components/mySkill'
 import NavMenu from './components/Navmenu'
 
 export default {

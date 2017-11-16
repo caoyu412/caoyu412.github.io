@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '../pages/index'
-import ArticlePackage from '../pages/article'
+import PersonalPackage from '../pages/personal'
 import CasePackage from '../pages/case'
 import StarsPackage from '../pages/stars'
 import LovePackage from '../pages/love'
@@ -13,11 +12,6 @@ export default new Router({
   history: true,
   mode: 'history',
   routes: [
-    {
-      path: '/index/:navIndex',
-      name: 'index',
-      component: Index,
-    },
     {
       path: '/case/:navIndex',
       name: 'case',
@@ -39,13 +33,13 @@ export default new Router({
       component: PicturePackage,
     },
     {
-      path: '/article/:navIndex',
-      name: 'article',
-      component: ArticlePackage,
+      path: '/personal/:navIndex',
+      name: 'personal',
+      component: PersonalPackage,
     },
     {
       path: '*',
-      redirect: '/index/0',
+      redirect: '/love/2',
     }
   ]
 })
