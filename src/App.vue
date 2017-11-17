@@ -2,18 +2,19 @@
   <div id="app">
     <nav-menu></nav-menu>
     <router-view></router-view>
+    <footer-information></footer-information>
   </div>
 </template>
 
 <script>
-import Index from './components/mySkill'
 import NavMenu from './components/Navmenu'
+import FooterInformation from './components/Footer'
 
 export default {
   name: 'app',
   components: {
-    Index,
     NavMenu,
+    FooterInformation,
   },
 };
 </script>

@@ -22,7 +22,7 @@ export default {
       Index: '',
       data: [
         {
-          name: 'demo展示',
+          name: 'blog',
           link: '/case/0',
           index: '0',
         },

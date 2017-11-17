@@ -94,8 +94,7 @@ export default {
   }
   .slide-show {
     position: relative;
-    margin: 15px 15px 15px 0;
-    width: 900px;
+    width: 100%;
     height: 500px;
     overflow: hidden;
   }
@@ -115,9 +114,14 @@ export default {
     width: 100%;
     height: 100%;
   }
+  .slide-img > a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
   .slide-img img {
-    width: 900px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;

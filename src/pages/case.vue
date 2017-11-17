@@ -45,7 +45,6 @@ export default {
   },
   methods: {
     dosomethingOnSlide() {
-      console.log(1)
     },
   },
   components: {
@@ -57,6 +56,6 @@ export default {
 <style scoped>
   .content {
     width: 100%;
-    height: 934px;
+    height: 100%;
   }
 </style>
