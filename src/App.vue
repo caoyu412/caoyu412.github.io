@@ -2,7 +2,7 @@
   <div id="app">
     <nav-menu></nav-menu>
     <router-view></router-view>
-    <footer-information></footer-information>
+    <footer-information v-if="this.$route.name !== 'love' && this.$route.name !== 'stars'"></footer-information>
   </div>
 </template>
 
@@ -24,7 +24,7 @@ export default {
 @import "utils.css";
 
 #app {
-  height: 100%;
+  height: auto;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

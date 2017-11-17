@@ -35,6 +35,7 @@ export default {
     text-align: center;
     font-size: 12px;
     color: #e9e9e9;
+    margin-top: 60px;
   }
 
   .wrap-main {

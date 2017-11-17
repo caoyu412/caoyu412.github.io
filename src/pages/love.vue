@@ -1,7 +1,21 @@
-<script src="../../../酷炫/jiaoben2329/js/imageTransform3D.js"></script>
 <template>
   <div class="content">
-    <div class="love"><span class="letter">I</span><span class="letter"></span><span class="letter">L</span><span class="letter">o</span><span class="letter">v</span><span class="letter">e</span><span class="letter"></span><span class="letter">Y</span><span class="letter">o</span><span class="letter">u</span><span class="letter"></span><span class="letter">G</span><span class="letter">r</span><span class="letter">a</span><span class="letter">c</span><span class="letter">e</span><span class="letter">!</span>
+    <div class="love">
+      <span class="letter">I</span>
+      <span class="letter"></span>
+      <span class="letter">L</span>
+      <span class="letter">o</span>
+      <span class="letter">v</span>
+      <span class="letter">e</span>
+      <span class="letter"></span>
+      <span class="letter">Y</span>
+      <span class="letter">o</span>
+      <span class="letter">u</span>
+      <span class="letter"></span>
+      <span class="letter">W</span>
+      <span class="letter">Y</span>
+      <span class="letter">Y</span>
+      <span class="letter">!</span>
     </div>
     <div class="roses">
       <div class="rose">
@@ -181,18 +195,17 @@ export default {
     }
   },
   methods: {
-
   },
   components: {
   },
-};
+}
 </script>
 
 <style scoped>
   @import "../assets/styles/love.css";
   .content {
     width: 100%;
-    height: 100%;
+    height: 673px;
     overflow: hidden;
     font-family: 'Petit Formal Script';
     background: -webkit-radial-gradient(center, ellipse, #051838, #0a093b 100%);

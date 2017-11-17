@@ -3,8 +3,14 @@
         <el-col :span="3"><div class="grid-content"></div></el-col>
         <el-col :span="18">
           <div class="content">
-              <slide-show :slides="slides" :inv="slideSpeed" @onchange="dosomethingOnSlide"></slide-show>
+            <div class="wrap-show">
+              <div class="show">
+                <slide-show :slides="slides" :inv="slideSpeed" @onchange="dosomethingOnSlide"></slide-show>
+              </div>
+            </div>
+            <div class="blog-main">
 
+            </div>
           </div>
         </el-col>
         <el-col :span="3"><div class="grid-content"></div></el-col>
@@ -56,6 +62,26 @@ export default {
 <style scoped>
   .content {
     width: 100%;
-    height: 100%;
+    height: auto;
+  }
+  .wrap-show {
+    position:relative;
+    width: 100%;
+    height: 600px;
+  }
+  .show {
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .blog-main {
+    width: 100%;
+    height: 900px;
+    background: lightblue;
   }
 </style>
